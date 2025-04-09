@@ -1,0 +1,146 @@
+:root {
+  
+
+--Green200-lighter: hsl(148, 38%, 91%);
+--Green-600-medium: hsl(169, 82%, 27%);
+--Red: hsl(0, 66%, 54%);
+
+
+--White: hsl(0, 0%, 100%);
+--Grey-500-medium: hsl(186, 15%, 59%);
+--Grey-900-darker: hsl(187, 24%, 22%);
+
+  
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "verdana", sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px 10px;
+  color: var(--green);
+  background-color: var(--Green-600-medium);
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+header img {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+header h3 {
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.general-container {
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.input-containers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 3px;
+  padding: 20px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background-color: var(--Green-600-medium);
+}
+
+
+.meme {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.meme > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.meme span {
+  position: absolute;
+  text-align: center;
+  margin-block: 15px;
+  padding-inline: 5px;
+  font-family: impact, sans-serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+  padding: 0 10px; /* Optional: Add padding to avoid text cutting off */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.top {
+  top: 10%;
+  left: 0;
+  right: 0;
+}
+
+.bottom {
+  bottom: 10%;
+  left: 0;
+  right: 0;
+}
+
+@media(max-width:600px) {
+  .input-containers {
+    grid-template-columns: 1fr;
+  }
+
+  
+}
